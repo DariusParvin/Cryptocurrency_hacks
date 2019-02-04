@@ -16,5 +16,4 @@ Red points - Timing of hack<br>
 <br>
 
 <h3>Wallet type involved in hacks</h3>
-<img src="example_figures/wallet_type.png", width = "600">
-
+<img src="example_figures/wallets.png", width = "600">
