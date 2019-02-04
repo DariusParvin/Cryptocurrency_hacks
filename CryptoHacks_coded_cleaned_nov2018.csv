@@ -1,0 +1,43 @@
+incident,year,lossUSD,organisation,hackType,userDataCompromised,walletType
+Bitcoin7,11-Oct,"50,000",exchange,serverHacked,1,hot
+Mt. Gox,11-Jun,"8,750,000",exchange,humanError,0,hot
+Bitcoinica,12-Jul,"650,000",exchange,serverHacked,1,hot
+Bitfloor,12-Sep,"250,000",exchange,serverHacked,na,hot
+Vicurex,13-May,"160,000",exchange,serverHacked,0,hot
+PicoStocks,13-Jun,"130,000",exchange,humanError,1,hot
+PicoStocks,13-Nov,"3,000,000",exchange,insideJob,0,cold
+Mt. Gox,14-Feb,"460,000,000",exchange,humanError,0,hot
+Cryptsy,14-Jul,"9,500,000",exchange,insideJob,0,hot
+Cryptorush,14-Mar,"570,000",exchange,bug,0,hot
+Poloniex,14-Mar,"64,000",exchange,bug,0,hot
+BTER,14-Aug,"1,650,000",exchange,unknown,0,cold
+MintPal,14-Oct,"1,300,000",exchange,unknown,0,na
+KipCoin,14-Oct,"690,000",exchange,unknown,0,na
+BitPay,14-Dec,"1,800,000",exchange,humanError,0,na
+Bter,15-Feb,"1,750,000",exchange,bug,0,hot
+796Exchange,15-Jan,"230,000",exchange,humanError,0,na
+Bitstamp,15-Jan,"5,200,000",exchange,humanError,0,hot
+Bitfinex,16-Aug,"77,000,000",exchange,bug,0,hot
+ShapeShift,16-Apr,"230,000",exchange,serverHacked,0,hot
+Gatecoin,16-May,"2,000,000",exchange,bug,0,hot
+Bitcurex,16-Oct,"1,500,000",exchange,unknown,1,hot
+Youbit,17-Dec,"5,300,000",exchange,unknown,0,hot
+Bithumb,17-Feb,"1,000,000",exchange,serverHacked,1,hot
+CoinCheck[3],18-Jan,"500,000",exchange,bug,0,hot
+CoinSecure,18-Apr,"3,500,000",exchange,unknown,0,hot
+BitGrail,18-Feb,"187,000",exchange,bug,na,hot
+Coinrail,18-Jun,"40,000,000",exchange,unknown,0,hot
+Zaif,18-Sep,"60,000,000",exchange,unknown,0,hot
+MyBitcoin,11-Aug,"2,000,000",wallet,unknown,0,na
+Linode,12-Mar,"228,000",private,serverHacked,1,hot
+Inputs.io,13-Oct,"1,200,000",wallet,serverHacked,1,hot
+BIPs,13-Nov,"1,000,000",wallet,bug,na,hot
+Flexcoin,14-Mar,"600,000",wallet,unknown,na,hot
+Tether Token ,17-Nov,"30,000,000",token ,unknown,na,hot
+NiceHash,17-Dec,"62,000,000",miningPool,unknown,na,na
+BlackWallet,18-Jan,"400,000",wallet,serverHacked,na,na
+Bee Token ,18-Feb,"928,000",token ,serverHacked,1,na
+DAO hack,16-Jun,"60,000,000",smartContract,bug,na,na
+Parity wallet hack,17-Jul,"30,000,000",smartContract,bug,na,na
+CoinDash ICO hack,17-Jul,"10,300,000",smartContract,bug,na,na
+Parity multisig bug,17-Nov,"155,000,000",smartContract,bug,na,na

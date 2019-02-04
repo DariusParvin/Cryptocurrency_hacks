@@ -1,0 +1,153 @@
+<html>
+
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+  <div>
+    <strong>Instructions: </strong>
+    <span>Below you'll find two exchanges listed on www.coinmarketcap.com. <br>
+      Find out the year and the month (if available) that they were founded.<br>
+      <br>
+      Please also paste a link to the website where you found the information.
+    </span>
+    <div>
+
+
+      <!-- Bitfinex check -->
+      <div>
+        <!-- Your website URLs will be substituted for the ${url} variable when you publish
+        a batch with an input file containing multiple website URLs -->
+        <p><strong>Find the date <a href="https://coinmarketcap.com/exchanges/bitfinex/" target="_blank">Bitfinex</a> was founded </strong></p>
+      </div>
+
+
+      <!-- <div id="foundMonth" style="width:15%;float:left;margin-left:5px;"> -->
+      <div id="bfxMonth">
+        Month (if available):
+        <select id='bfxMonth' name="bfxMonth" style="font-size:100%" onchange="show_month()">
+          <option value=''>--Select Month--</option>
+          <option value='1'>Janaury</option>
+          <option value='2'>February</option>
+          <option value='3'>March</option>
+          <option value='4'>April</option>
+          <option value='5'>May</option>
+          <option value='6'>June</option>
+          <option value='7'>July</option>
+          <option value='8'>August</option>
+          <option value='9'>September</option>
+          <option value='10'>October</option>
+          <option value='11'>November</option>
+          <option value='12'>December</option>
+        </select>
+      </div>
+      <br>
+      Year:  <input id="bfxYear" name="bfxYear" type="number" style="font-size:100%" onfocusout="myFunctionBfx()" required>
+      <p id="warningMsgBfx" style="color:red"> </p>
+
+
+      <!-- Warning message if the year founded is too early or late -->
+      <script>
+      function myFunctionBfx() {
+        var x = document.getElementById("bfxYear").value;
+        if (x < 2008 || x > 2019) {
+          document.getElementById("warningMsgBfx").innerHTML = "Are you sure it was founded in " + x + "?";
+        } else {
+          document.getElementById("warningMsgBfx").innerHTML = "";
+        }
+      }
+      </script>
+      <br>
+
+      Are you confident about the date?
+      &nbsp Confident<input type="radio" name="bfxConfidence" value="1" />
+      &nbsp Not confident<input type="radio" name="bfxConfidence" value="2" />
+
+      <div>
+        <p><strong>Link containing evidence of date founded:</strong></p>
+        <crowd-input name="bfxLink" placeholder="Enter a link"  required />
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+
+
+      <!-- Exchange 2 (actual exchange of interest) -->
+      <div>
+        <!-- Your website URLs will be substituted for the ${url} variable when you publish
+        a batch with an input file containing multiple website URLs -->
+        <p><strong>Find the date <a href="${url}" target="_blank">${urlName}</a> was founded </strong></p>
+      </div>
+
+
+      <!-- <div id="foundMonth" style="width:15%;float:left;margin-left:5px;"> -->
+      <div id="foundMonth">
+        Month (if available):
+        <select id='foundMonth' name="foundMonth" style="font-size:100%" onchange="show_month()">
+          <option value=''>--Select Month--</option>
+          <option value='1'>Janaury</option>
+          <option value='2'>February</option>
+          <option value='3'>March</option>
+          <option value='4'>April</option>
+          <option value='5'>May</option>
+          <option value='6'>June</option>
+          <option value='7'>July</option>
+          <option value='8'>August</option>
+          <option value='9'>September</option>
+          <option value='10'>October</option>
+          <option value='11'>November</option>
+          <option value='12'>December</option>
+        </select>
+      </div>
+      <br>
+      Year:  <input id="fYear" name="foundYear" type="number" style="font-size:100%" onfocusout="myFunction()" required>
+      <p id="warningMsg" style="color:red"> </p>
+
+
+      <!-- Warning message if the year founded is too early or late -->
+      <script>
+      function myFunction() {
+        var x = document.getElementById("fYear").value;
+        if (x < 2008 || x > 2019) {
+          document.getElementById("warningMsg").innerHTML = "Are you sure it was founded in " + x + "?";
+        } else {
+          document.getElementById("warningMsg").innerHTML = "";
+        }
+      }
+      </script>
+      <br>
+
+      Are you confident about the date?
+      &nbsp Confident<input type="radio" name="confidence" value="1" />
+      &nbsp Not confident<input type="radio" name="confidence" value="2" />
+
+      <div>
+        <p><strong>Link containing evidence of date founded:</strong></p>
+        <crowd-input name="link" placeholder="Enter a link"  required />
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+
+      <!-- Request for feedback -->
+      <div>
+        <p><strong>(Optional) HIT feedback/comments</strong></p>
+        <crowd-input name="feedback" placeholder="Enter a link"  required />
+      </div>
+
+
+    </div>
+  </div>
+</crowd-form>
+
+
+</html>
