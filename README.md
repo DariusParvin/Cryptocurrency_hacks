@@ -1,10 +1,11 @@
 # Cryptocurrency hacks
 
-This jupyter notebook contains some analysis I did on cryptocurrency hacks 
+This jupyter notebook contains some data collection and analysis I did on cryptocurrency hacks. Amazon's Mechanical Turk was used to crowd source business data on cryptocurrency exchanges. The questionnaire scripts and raw data are included in the MTurk folder.
 
+Below are some example figures and conclusions.<br>
 [Click here for the full jupyter notebook report](https://dariusparvin.github.io/Cryptocurrency_hacks/)
+<br>
 
-Here are some example figures:<br>
 
 <h3>Timing of hacks relative to Bitcoin market cap</h3>
 By eye, it appears as though most hacks occur shorts after a bull run in the Bitcoin market cap.<br>
