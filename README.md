@@ -2,7 +2,7 @@
 
 This jupyter notebook contains some analysis I did on cryptocurrency hacks 
 
-[Click here for the full report](https://dariusparvin.github.io/Cryptocurrency_hacks/)
+[Click here for the full jupyter notebook report](https://dariusparvin.github.io/Cryptocurrency_hacks/)
 
 Here are some example figures:<br>
 
